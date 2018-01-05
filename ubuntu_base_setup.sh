@@ -247,13 +247,14 @@ apt-get install -y php7.1 php7.1-common \
 php7.1-curl php7.1-xml php7.1-zip php7.1-gd \
 php7.1-mysql  php7.1-mbstring php7.1-bcmath \
 php7.1-mcrypt php7.1-dev php7.1-cli php-imagick php7.1-dom \
-php-dompdf php-pear php-pecl-http php-mongodb php-gettext php7.1-gd \
+php-dompdf php-pear php-pecl-http php-mongodb php-gettext php7.1-gd
 logLocal "Done Install PHP" true
 }
 
 installApache(){
 apt-get install apache2
 a2enmod rewrite
+a2enmod php7.1
 logLocal "Done Install Apache" true
 }
 
